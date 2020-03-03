@@ -1,0 +1,25 @@
+{
+  "name": "chatserver",
+  "version": "1.0.0",
+  "description": "real time chat server using node.js and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "startServer": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-hsiao/Real-Time-Chat-Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nick-hsiao/Real-Time-Chat-Server/issues"
+  },
+  "homepage": "https://github.com/nick-hsiao/Real-Time-Chat-Server#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

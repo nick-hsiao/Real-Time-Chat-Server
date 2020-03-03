@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src='http://localhost:3000/socket.io/socket.io.js'></script>
+  <script defer src='script.js'></script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    #message-container {
+      width: 50%;
+      max-width: 1200px;
+      font-size: 20px;
+      
+    }
+
+    #message-container div {
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 12px;
+      font-size: 20px;
+      font-family:monospace;
+      position: relative;
+    }
+
+    #message-container div:nth-child(2n) {
+      background-color:  #d9d9d9;
+    }
+
+    #send-container {
+      position: fixed;
+      padding-bottom: 0px;
+      bottom: 0;
+      background-color: white;
+      max-width: 1200px;
+      width: 50%;
+      display: flex;;
+    }
+
+    #message-input {
+      flex-grow: 1;
+      height: 30px;
+      font-size: 20px;
+      font-family: monospace;
+    
+      
+    }
+
+    #send-button {
+      font-size: 20px;
+      color: #fff;
+      background-color: #668cff;
+      transition-duration: 0.4s;
+      font-family: monospace;
+     
+    }
+
+    #send-button:hover{
+      background-color: #fff; 
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div id ='message-container'></div>
+  <form id='send-container'>
+    <input type='text' id='message-input'>
+    <button type='submit' id='send-button'>Send</button>
+</body>
+</html>
